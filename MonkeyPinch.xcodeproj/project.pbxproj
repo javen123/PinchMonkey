@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1D5D4519E83EE300F98060 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1D5D4319E83EE300F98060 /* chomp.caf */; };
+		CE1D5D4619E83EE300F98060 /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1D5D4419E83EE300F98060 /* hehehe1.caf */; };
+		CE1D5D4819E8443900F98060 /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D5D4719E8443900F98060 /* TickleGestureRecognizer.swift */; };
 		CE638B3B19E7397C0036A3F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE638B3A19E7397C0036A3F6 /* AppDelegate.swift */; };
 		CE638B3D19E7397C0036A3F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE638B3C19E7397C0036A3F6 /* ViewController.swift */; };
 		CE638B4019E7397C0036A3F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE638B3E19E7397C0036A3F6 /* Main.storyboard */; };
@@ -26,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1D5D4319E83EE300F98060 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = chomp.caf; path = ../chomp.caf; sourceTree = "<group>"; };
+		CE1D5D4419E83EE300F98060 /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = hehehe1.caf; path = ../hehehe1.caf; sourceTree = "<group>"; };
+		CE1D5D4719E8443900F98060 /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
+		CE1D5D4919E84B7D00F98060 /* MonkeyPinch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MonkeyPinch-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE1D5D4A19E84B7D00F98060 /* NSObject+Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Bridging_Header.h"; sourceTree = "<group>"; };
 		CE638B3519E7397C0036A3F6 /* MonkeyPinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeyPinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE638B3919E7397C0036A3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE638B3A19E7397C0036A3F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,10 +87,13 @@
 			children = (
 				CE638B3A19E7397C0036A3F6 /* AppDelegate.swift */,
 				CE638B3C19E7397C0036A3F6 /* ViewController.swift */,
+				CE1D5D4719E8443900F98060 /* TickleGestureRecognizer.swift */,
+				CE1D5D4A19E84B7D00F98060 /* NSObject+Bridging_Header.h */,
 				CE638B3E19E7397C0036A3F6 /* Main.storyboard */,
 				CE638B4119E7397C0036A3F6 /* Images.xcassets */,
 				CE638B4319E7397C0036A3F6 /* LaunchScreen.xib */,
 				CE638B3819E7397C0036A3F6 /* Supporting Files */,
+				CE1D5D4919E84B7D00F98060 /* MonkeyPinch-Bridging-Header.h */,
 			);
 			path = MonkeyPinch;
 			sourceTree = "<group>";
@@ -90,6 +101,8 @@
 		CE638B3819E7397C0036A3F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE1D5D4319E83EE300F98060 /* chomp.caf */,
+				CE1D5D4419E83EE300F98060 /* hehehe1.caf */,
 				CE638B3919E7397C0036A3F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +205,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D5D4619E83EE300F98060 /* hehehe1.caf in Resources */,
+				CE1D5D4519E83EE300F98060 /* chomp.caf in Resources */,
 				CE638B4019E7397C0036A3F6 /* Main.storyboard in Resources */,
 				CE638B4519E7397C0036A3F6 /* LaunchScreen.xib in Resources */,
 				CE638B4219E7397C0036A3F6 /* Images.xcassets in Resources */,
@@ -213,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE638B3D19E7397C0036A3F6 /* ViewController.swift in Sources */,
+				CE1D5D4819E8443900F98060 /* TickleGestureRecognizer.swift in Sources */,
 				CE638B3B19E7397C0036A3F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,9 +352,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MonkeyPinch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPinch/MonkeyPinch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +365,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MonkeyPinch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MonkeyPinch/MonkeyPinch-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -405,6 +426,7 @@
 				CE638B5619E7397C0036A3F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE638B5719E7397C0036A3F6 /* Build configuration list for PBXNativeTarget "MonkeyPinchTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +435,7 @@
 				CE638B5919E7397C0036A3F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
